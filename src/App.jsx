@@ -5,7 +5,7 @@ import { MainContainer, ChatContainer, MessageList, Message, MessageInput, Typin
 
 
 
- const API_KEY = "Apı key";
+const openAiApiKey = process.env.REACT_APP_OPENAI_API_KEY;
 //"Bir şeyleri, kodlama öğrenen 10 yaşındaki bir çocuğa açıklar gibi açıkla."
 const systemMessage = { // "Bir şeyleri, 5 yıllık deneyime sahip bir yazılım profesyoneliyle konuşuyormuş gibi açıkla."
   "role": "system", "content": "Explain things like you're talking to a software professional with 2 years of experience."
